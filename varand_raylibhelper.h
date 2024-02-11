@@ -40,6 +40,12 @@ inline Rectangle GetRectangle(f32 x, f32 y, f32 dim)
     return result;
 }
 
+inline Rectangle GetRectangle(f32 width, f32 height)
+{
+    Rectangle result = GetRectangle(0, 0, width, height);
+    return result;
+}
+
 inline Vector2 GetRectangleMin(Rectangle rectangle)
 {
     Vector2 result = GetVector2(rectangle.x, rectangle.y);

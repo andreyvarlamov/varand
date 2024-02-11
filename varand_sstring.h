@@ -156,6 +156,8 @@ CompareStrings(const char *A, const char *B)
     return (B[Index] == '\0');
 }
 
+// TODO: This shouldn't really be here
+
 inline simple_string
 GetDirectoryFromPath(const char *Path)
 {
@@ -188,8 +190,6 @@ GetDirectoryFromPath(const char *Path)
 
     return Result;
 }
-
-// TODO: This shouldn't really be here
 
 inline simple_string
 GetFilenameFromPath(const char *Path, b32 IncludeExt)

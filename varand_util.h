@@ -1,9 +1,9 @@
 #ifndef VARAND_UTIL_H
 #define VARAND_UTIL_H
 
-#define global_variable static
-#define local_persist static
-#define internal static
+#define static_g static
+#define static_p static
+#define static_i static
 
 #define Assert(Expression) if (!(Expression)) { *(int *) 0 = 0; }
 #define InvalidCodePath Assert(!"Invalid Code Path")
